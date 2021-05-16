@@ -1,0 +1,21 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run start --stream",
+    "prepare": "husky install",
+    "pre-commit": "pretty-quick --parallel --staged",
+    "clean": "lerna clean"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lerna": "^4.0.0",
+    "prettier": "2.2.1",
+    "prettier-plugin-packagejson": "^2.2.10",
+    "pretty-quick": "^3.1.0"
+  }
+}
